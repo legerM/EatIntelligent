@@ -12,11 +12,6 @@
     </properties>
     <name>Eatintelligent</name>
     <dependencies>
-        <dependency>
-            <groupId>fr.koario</groupId>
-            <artifactId>JavaLibraryKoario</artifactId>
-            <version>1.0</version>
-            <type>jar</type>
-        </dependency>
+        
     </dependencies>
 </project>
