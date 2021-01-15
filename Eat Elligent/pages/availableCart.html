@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Test</title>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="../cart.json"></script>
+        </head>
+
+<body>
+
+    <script>
+        
+        $(function(){
+
+        $.each(json, function(i, data){
+            console.log(data)
+          var type = data.type;
+          var quantity = data.quantity;
+          var tableau = "<table>";
+          var row = "";
+
+            if(quantity != "")
+              {
+              row += "<tr style='border: 1px solid black;'>";
+              type = "<td style='border: 1px solid black;'>" + type + "</td>";
+              quantity = "<td style='border: 1px solid black;'>" + quantity + "</td>";
+              row += type + quantity +"</tr>";
+              }
+              
+            tableau += row + "</table>";
+            document.write(tableau);
+        });
+      });
+
+        console.log(json);
+
+    </script>
+    
+    <table></table>
+</body>
+
+</html>
